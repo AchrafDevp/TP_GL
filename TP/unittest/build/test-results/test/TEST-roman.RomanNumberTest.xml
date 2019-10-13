@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="roman.RomanNumberTest" tests="19" skipped="0" failures="0" errors="0" timestamp="2019-10-13T17:47:24" hostname="louiza-K501LX" time="0.187">
+  <properties/>
+  <testcase name="fromRomanOnlyCapital" classname="roman.RomanNumberTest" time="0.012"/>
+  <testcase name="fromDecimalKnownValues" classname="roman.RomanNumberTest" time="0.055"/>
+  <testcase name="toIntRomanSymbolrepetition" classname="roman.RomanNumberTest" time="0.001"/>
+  <testcase name="romanToDouble" classname="roman.RomanNumberTest" time="0.005"/>
+  <testcase name="compareTest" classname="roman.RomanNumberTest" time="0.0"/>
+  <testcase name="romanToFloat" classname="roman.RomanNumberTest" time="0.0"/>
+  <testcase name="romanToShort" classname="roman.RomanNumberTest" time="0.0"/>
+  <testcase name="validateConversion" classname="roman.RomanNumberTest" time="0.071"/>
+  <testcase name="fromRomanKnownValues" classname="roman.RomanNumberTest" time="0.001"/>
+  <testcase name="romanToByte" classname="roman.RomanNumberTest" time="0.001"/>
+  <testcase name="romanToLong" classname="roman.RomanNumberTest" time="0.0"/>
+  <testcase name="toIntRomanIncorrectOrder" classname="roman.RomanNumberTest" time="0.0"/>
+  <testcase name="romanToInt" classname="roman.RomanNumberTest" time="0.001"/>
+  <testcase name="toRomanZero" classname="roman.RomanNumberTest" time="0.0"/>
+  <testcase name="compareIllegalType" classname="roman.RomanNumberTest" time="0.001"/>
+  <testcase name="toRomanOnlyCapital" classname="roman.RomanNumberTest" time="0.029"/>
+  <testcase name="toIntRomanTooMuchRepitition" classname="roman.RomanNumberTest" time="0.001"/>
+  <testcase name="toRomanOutOfInterval" classname="roman.RomanNumberTest" time="0.0"/>
+  <testcase name="toRomanNegatif" classname="roman.RomanNumberTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
