@@ -1,0 +1,39 @@
+<project name="project" default="run" basedir=".">
+  
+
+
+  <target name="init">
+    <mkdir dir="bin"/>
+    <mkdir dir="reports"/>
+  </target>
+
+  <path id="classpath">
+    <path location="lib">
+      <fileset dir="lib" includes="*.jar"></fileset>
+    </path>
+    <pathelement location="bin"></pathelement>
+  </path>
+
+
+  <target name="compile" depends="init" description="compile the source">
+    <javac classpathref="classpath" includeantruntime="true" srcdir="src" destdir="bin" includes="*.java">
+    </javac>
+  </target>
+
+  <target name="run" depends="compile">
+    <junit haltonfailure="off" printsummary="on">
+      <classpath refid="classpath">
+      </classpath>
+      <test name="ClientTest" todir="reports"></test>
+      <test name="ReservationTest" todir="reports"></test>
+      <test name="VolTest" todir="reports"></test>
+      <formatter type="plain"/>
+    </junit>
+  </target>
+
+  <target name="clean" description="clean up">
+    <delete dir="bin"/>
+    <delete dir="reports"/>
+  </target>
+  
+</project>

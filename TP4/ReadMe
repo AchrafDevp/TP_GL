@@ -1,0 +1,15 @@
+Remarques concernant l'UML fourni dans le TP:
+
+1. Les cardinalité "1..*" du côté du passager et aussi du côté du client vis-à-vis leur association avec la classe Reservation est fausse. Il est plus naturel de choisir comme cardianlité "1". En effet, une reservation concerne nécesserement un et un seul passager et a été créer par un et un seul client.
+
+2. La classe Vol doit nécesseremenet connaitre la classe Reservation rendant ainsi l'assocition entre les deux classes bidirectionnelle. En effet, il sera utile par la suite que la classe Vol stocke la liste des réservations qui la concerne.
+
+3. Les attributs de la classe Reservation doivent être privés comme tout le reste des attributs afin d'assurer le principe d'encapsulation.
+
+4. Il est plus sûr de définir l'état de la réservation comme une énumération afin d'éviter la gestion de toute sorte d'exception qu'un String pourrait générer.
+
+5. Il est nécessaire d'attribuer à la classe Vol un attribut "etat" qui précise si le vol et ouvert ou non à la réservation. Une fois cela fait, on aura besoin d'ajouter un attribut "maxReservations" à la classe Vol, pour préciser le nombre maximal de réservation qu'un vol peut supporter.
+
+6. Le client étant la personne à qui est destiné les actions reserver, payer, confirmer et annuler, il est raisonnable d'ajouter à la classe Client les méthodes lui permettant ces actions.
+
+Nous avons muni nos classes de 6 tests unitaires qui ont tous été validés.
